@@ -2,6 +2,10 @@
 pipeline {
     agent any
 
+    environment {
+        DOCKER_PATH = 'C:\\Users\\sarvesh\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin\\docker.exe'
+    }
+    
     stages {
         stage('Checkout') {
             steps {
@@ -29,7 +33,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat 'docker build -t java-web-lab:latest .'
+                bat '"%DOCKER_PATH%" build -t java-web-lab:latest .'
             }
         }
     }
