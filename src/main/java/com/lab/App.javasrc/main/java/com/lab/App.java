@@ -49,7 +49,7 @@ public class App {
                 </head>
                 <body>
                     <main>
-                        <h1>Java Web Application-modified</h1>
+                        <h1>Payment Feature - Java Web Application</h1>
                         <p>Git + Maven + Jenkins + Docker</p>
                         <p class="status">
                             Build and deployment successful!
